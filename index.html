@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nb">
   <head>
-    <title>Home</title>
+    <title>Gjøremålsliste</title>
+    <link rel="shortcut icon" href="todoListIcon.ico" type="image/x-icon" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <link rel="stylesheet" href="styles.css" />
@@ -9,8 +10,17 @@
   </head>
   <body>
     <!-- Todo Application -->
-    <section>
-      <button id="addTodoButton">Legg til gjøremål</button>
+    <section class="todoSection">
+      <div>
+        <label for="todoInput">
+          <input type="text" name="todoInput" id="todoInput">
+        </label>
+        <button id="addTodoButton">Legg til gjøremål</button>
+      </div>
+
+      <ul id="todoList" class="todoList">
+        <li>Vaske gulv</li>
+      </ul>
     </section>
   </body>
 </html>
